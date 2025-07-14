@@ -1,10 +1,10 @@
 package com.customer.relation.demo.model;
 
 import jakarta.persistence.*;
+
 import lombok.*;
 
 @Entity
-@Table(name = "customers")
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
@@ -16,6 +16,6 @@ public class Customer {
 
     private String name;
     private String email;
-    private String phone;
+    private int phone;
     private String status;
 }
